@@ -1,0 +1,6 @@
+Reproduire une partie de la page HTML lists · WebPlatform Docs comprenant :
+
+le texte jusqu'à :  "we'll look at how to do that in the Styling lists and links article."
+la disposition des éléments comme dans la capture d'écran partielle html_lists.png (sans inclure les éléments floutés ou absents)
+le bandeau supérieur d'une couleur d'un beige uniforme
+la couleur des liens dans ce bandeau lors du leur survol, grâce à la pseudo-classe CSS :hover sur les éléments <a>
