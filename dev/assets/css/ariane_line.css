@@ -1,0 +1,124 @@
+.tool-area {
+    padding: 10px 0;
+}
+
+#hierarchy-menu {
+    float: left;
+}
+
+ol.breadcrumbs:only-child {
+    float: none;
+}
+
+ol.breadcrumbs {
+    margin: 0 0 0 -1.1em;
+    padding: 0;
+    height: 1em;
+    text-transform: uppercase;
+    float: left;
+}
+
+ol.breadcrumbs>li:first-child {
+    margin-left: 1em;
+    border-left: solid 2px #ded8c9;
+}
+
+ol.breadcrumbs>li {
+    float: left;
+    position: relative;
+    margin: 0;
+}
+
+ol.breadcrumbs li {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+ol.breadcrumbs>li:first-child>a {
+    padding-left: 1em;
+}
+
+ol.breadcrumbs>li:first-child>a {
+    box-shadow: 0 1px #f7f1e0 inset, 0 -1px #f7f1e0 inset, 1px 0 #f7f1e0 inset;
+}
+
+ol.breadcrumbs li a {
+    display: block;
+}
+
+ol.breadcrumbs>li>a {
+    padding: 0.6em 1.5em 0.6em 0.4em;
+    margin-left: -1px;
+    box-shadow: 0 1px hsl(0deg 0% 100% / 50%) inset, 0 -1px hsl(0deg 0% 100% / 80%) inset;
+}
+
+ol.breadcrumbs>li>a,
+ol.breadcrumbs>li:not(:last-child)>a::before {
+    border: 1px solid #ded8c9;
+    border-width: 1px 0;
+    background-color: #F0EBDD;
+}
+
+.tool-area a {
+    color: #74663e;
+    font-size: 85%;
+    text-decoration: none;
+}
+
+a {
+    color: #256a84;
+    text-decoration: none;
+    transition: color .2s;
+}
+
+ol.breadcrumbs>li:not(:last-child)>a::before {
+    content: '';
+    position: absolute;
+    right: 2px;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    padding: 1em 0.6em;
+    border: inherit;
+    border-right-width: 1px;
+}
+
+ol.breadcrumbs>li:not(:last-child)>a::before,
+ol.breadcrumbs>li:last-child>a {
+    border-radius: 1.2em;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    box-shadow: 0 1px hsl(0deg 0% 100% / 50%) inset, 0 -1px hsl(0deg 0% 100% / 80%) inset, -1px 0 hsl(0deg 0% 100% / 80%) inset;
+}
+
+ol.breadcrumbs>li:nth-last-child(2)>a {
+    background-image: -webkit-linear-gradient(right, #f9f7f3 100%, transparent);
+    background-image: linear-gradient(to left, #f9f7f3 100%, transparent);
+    background-repeat: no-repeat;
+    background-size: 1em 100%;
+    background-position: right;
+}
+
+ol.breadcrumbs>li:last-child>a {
+    border-right-width: 1px;
+    box-shadow: 0 1px hsl(0deg 0% 100% / 50%) inset, 0 -1px hsl(0deg 0% 100% / 80%) inset, -1px 0 white inset;
+}
+
+ol.breadcrumbs>li:last-child>a,
+ol.breadcrumbs>li:last-child>ul {
+    background-color: #f9f7f3;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+.tool-area:after {
+    content: '';
+    display: block;
+    clear: both;
+}

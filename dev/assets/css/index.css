@@ -1,0 +1,282 @@
+@import "ariane_line.css";
+@import "sidebar.css";
+@font-face {
+    font-family: "Bitter";
+    src: url("../fonts/bitter/Bitter-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bitter";
+    src: url("../fonts/bitter/Bitter-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gudea";
+    src: url("../fonts/gudea/Gudea-Regular.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-family: Gudea, Arial, sans-serif;
+    font-size: 14px;
+    color: #3C3C3C;
+    background-color: #efeadd;
+    background-image: url(../img/bg-pattern.png);
+}
+
+header {
+    padding: 3px 0;
+    text-align: right;
+    height: 30px;
+    color: white;
+    background: #4e4e50;
+    background-image: -webkit-linear-gradient(bottom, rgb(69, 69, 71) 40%, rgb(78, 79, 80) 70%);
+    border-bottom: 2px solid #606062;
+    box-shadow: 0px 1px 5px rgb(0 0 0 / 75%);
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+#firstHeading {
+    line-height: 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #58595b;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 14px;
+    font-family: Bitter, Cambria, Georgia, serif;
+}
+
+h2,
+h3,
+h4 {
+    padding-top: 14px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 20px;
+    border-bottom: 1px solid #e2e3e4;
+}
+
+h3 {
+    color: #6d685b;
+    font-weight: normal;
+    font-size: 16px;
+    border-bottom: 1px solid #eae3d3;
+}
+
+ul li {
+    margin-bottom: 10px;
+    list-style-image: url(../img/bullet.svg);
+    list-style-type: disc;
+}
+
+strong {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.container {
+    padding: 0 10px;
+    position: relative;
+    max-width: 950px;
+    margin: auto;
+}
+
+#logo {
+    position: absolute;
+    top: -5px;
+}
+
+#logo a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 0 0 7px 7px;
+    border: 1px solid white;
+    border-top: none;
+    /* background: #f9f7f3 url(./assets/logo.png); */
+    background: hsl(40, 29%, 96%) url(../img/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 1px 1px 1px #cbc6ba;
+}
+
+#sitenav {
+    background-color: #ece5d7;
+    background-image: url(../img/nav-bg.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    padding: 30px 0px 35px;
+}
+
+#sitenav .links {
+    padding-left: 150px;
+    text-transform: uppercase;
+}
+
+ul.links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.links>li {
+    display: inline-block;
+    margin: 0 !important;
+}
+
+#sitenav a {
+    color: #58595b;
+    text-shadow: 1px 1px 1px #dad5c8;
+}
+
+#sitenav a {
+    padding-right: 20px;
+    font-family: Bitter;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+#sitenav a.active {
+    color: #d37e00;
+    text-shadow: 1px 1px 1px white;
+}
+
+#sitenav a:hover:not(.active) {
+    color: #2dafbc;
+    text-shadow: 1px 1px 1px white;
+}
+
+#page {
+    background: #f9f7f3;
+    border-radius: 5px;
+    box-shadow: 0 0 1px #a7a9ac;
+    margin-bottom: 20px;
+}
+
+#page-content {
+    position: relative;
+    z-index: 0;
+    padding: 18px;
+}
+
+#main-content {
+    line-height: 1.5;
+}
+
+.readiness-state {
+    border-radius: 0 25px 25px 0;
+    box-sizing: border-box;
+    left: -981px;
+    padding: 0 45px 0 20px;
+    position: fixed;
+    top: 987px;
+    transform: rotate(-90deg);
+    width: 2000px;
+    height: 34px;
+}
+
+.Ready_to_Use {
+    background: #7BC649;
+}
+
+.readiness-state p {
+    background: url(../img/white-circle.svg) right center no-repeat;
+    box-sizing: border-box;
+    color: #333;
+    font-family: Bitter, Cambria, Georgia, serif;
+    font-style: italic;
+    margin: 0 -34px 0 0;
+    padding: 2px 140px 6px 20px;
+    text-align: right;
+}
+
+.readiness-state p a {
+    color: #333;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 6px;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1400px) {
+    #main-content {
+        padding-right: 220px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    body>.readiness-state {
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: rotate(0deg);
+        position: relative;
+        border-radius: 0;
+        padding: 0 45px 0 10px;
+    }
+    body>.readiness-state p {
+        background: transparent;
+        text-align: left;
+        padding: 5px 0 5px 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #main-content {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    header {
+        padding: 0;
+    }
+    .container {
+        padding: 0px 10px;
+        width: auto;
+    }
+    #logo {
+        position: static;
+    }
+    #logo a {
+        width: auto;
+        margin-bottom: 10px;
+    }
+    nav a {
+        display: block;
+    }
+    nav li {
+        display: block !important;
+        padding: 10px;
+        margin: 5px;
+        text-align: center;
+    }
+    #sitenav {
+        padding-top: 80px;
+    }
+    #sitenav .links {
+        padding: 0;
+    }
+}
