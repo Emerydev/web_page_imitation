@@ -1,5 +1,3 @@
-@import "ariane_line.css";
-@import "sidebar.css";
 @font-face {
     font-family: "Bitter";
     src: url("../fonts/bitter/Bitter-Bold.ttf") format("truetype");
@@ -27,22 +25,15 @@ body {
     font-size: 14px;
     color: #3C3C3C;
     background-color: #efeadd;
-    background-image: url(../img/bg-pattern.png);
 }
 
 header {
     padding: 3px 0;
-    text-align: right;
     height: 30px;
-    color: white;
     background: #4e4e50;
     background-image: -webkit-linear-gradient(bottom, rgb(69, 69, 71) 40%, rgb(78, 79, 80) 70%);
     border-bottom: 2px solid #606062;
     box-shadow: 0px 1px 5px rgb(0 0 0 / 75%);
-}
-
-li {
-    list-style: none;
 }
 
 h1,
@@ -52,9 +43,7 @@ h1,
 
 h1,
 h2,
-h3,
-h4,
-h5 {
+h3 {
     color: #58595b;
     font-weight: bold;
     margin: 0;
@@ -63,8 +52,7 @@ h5 {
 }
 
 h2,
-h3,
-h4 {
+h3 {
     padding-top: 14px;
 }
 
@@ -79,12 +67,6 @@ h3 {
     font-weight: normal;
     font-size: 16px;
     border-bottom: 1px solid #eae3d3;
-}
-
-ul li {
-    margin-bottom: 10px;
-    list-style-image: url(../img/bullet.svg);
-    list-style-type: disc;
 }
 
 strong {
@@ -111,7 +93,6 @@ strong {
     border-radius: 0 0 7px 7px;
     border: 1px solid white;
     border-top: none;
-    /* background: #f9f7f3 url(./assets/logo.png); */
     background: hsl(40, 29%, 96%) url(../img/logo.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -153,8 +134,9 @@ ul.links {
     font-weight: bold;
     font-size: 16px;
     text-decoration: none;
-    -webkit-transition: all .2s;
     transition: all .2s;
+    transition: all .2s;
+    cursor: pointer;
 }
 
 #sitenav a.active {
@@ -182,71 +164,6 @@ ul.links {
 
 #main-content {
     line-height: 1.5;
-}
-
-.readiness-state {
-    border-radius: 0 25px 25px 0;
-    box-sizing: border-box;
-    left: -981px;
-    padding: 0 45px 0 20px;
-    position: fixed;
-    top: 987px;
-    transform: rotate(-90deg);
-    width: 2000px;
-    height: 34px;
-}
-
-.Ready_to_Use {
-    background: #7BC649;
-}
-
-.readiness-state p {
-    background: url(../img/white-circle.svg) right center no-repeat;
-    box-sizing: border-box;
-    color: #333;
-    font-family: Bitter, Cambria, Georgia, serif;
-    font-style: italic;
-    margin: 0 -34px 0 0;
-    padding: 2px 140px 6px 20px;
-    text-align: right;
-}
-
-.readiness-state p a {
-    color: #333;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    margin-left: 6px;
-    text-decoration: underline;
-}
-
-@media screen and (max-width: 1400px) {
-    #main-content {
-        padding-right: 220px;
-    }
-}
-
-@media screen and (max-width: 950px) {
-    body>.readiness-state {
-        top: 0;
-        left: 0;
-        width: 100%;
-        transform: rotate(0deg);
-        position: relative;
-        border-radius: 0;
-        padding: 0 45px 0 10px;
-    }
-    body>.readiness-state p {
-        background: transparent;
-        text-align: left;
-        padding: 5px 0 5px 0;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    #main-content {
-        padding-right: 0;
-    }
 }
 
 @media screen and (max-width: 520px) {

@@ -1,115 +1,39 @@
 <!DOCTYPE html>
+<!-- imitation de la page web https://webplatform.github.io/docs/guides/html_lists/ -->
 <html lang="en">
 
 <head>
     <meta content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="shortcut icon" href="assets/img/favicon.ico">
     <meta name="description" content="This article introduces the three list types in HTML and explores their basic features.">
     <title>HTML lists · WebPlatform Docs</title>
 </head>
 
 <body>
-    <div class="readiness-state Ready_to_Use">
-        <p>This page is <a>Ready to Use</a></p>
-    </div>
     <header>
         <div class="container">
             <div id="logo">
-                <a href="https://webplatform.github.io/" title="Visit the home page"></a>
+                <a></a>
             </div>
         </div>
     </header>
     <nav id="sitenav">
         <div class="container">
             <ul class="links">
-                <li><a href="https://webplatform.github.io/" class="active">THE DOCS</a></li>
-                <li><a href="https://webplatform.github.io/docs/Community">CONNECT</a></li>
-                <li><a href="https://webplatform.github.io/docs/WPD/Contributors_Guide/">CONTRIBUTE</a></li>
-                <li><a href="https://webplatform.github.io/blog/">BLOG</a></li>
+                <li><a class="active">THE DOCS</a></li>
+                <li><a>CONNECT</a></li>
+                <li><a>CONTRIBUTE</a></li>
+                <li><a>BLOG</a></li>
+                <li><a>ISSUES</a></li>
             </ul>
         </div>
     </nav>
 
-    <div id="siteNotice">
-        <div id="localNotice" dir="ltr" lang="en">
-
-            <div class="notice" style="margin:10px auto; position: relative; width: 90%; max-width: 950px;">
-                <div style="padding: 10px; border-radius: 4px; background-color: rgb(249, 247, 243); box-shadow: 0px 0px 1px rgb(167, 169, 172);">
-                    <strong>Notice:</strong>&nbsp;The WebPlatform project, supported by various stewards between 2012 and 2015, has been <b>discontinued</b>. This site is now available on <a href="https://github.com/webplatform/webplatform.github.io/">github</a>.
-                </div>
-            </div>
-
-        </div>
-    </div>
-
     <div id="content">
         <div class="container">
-            <a id="top"></a>
-            <div class="tool-area">
-                <div id="hierarchy-menu">
-                    <ol id="breadcrumb-info" class="breadcrumbs">
-                        <li><a href="https://webplatform.github.io/">DOCS</a></li>
-                        <li><a href="https://webplatform.github.io/docs/guides/">guides</a></li>
-                        <li><a href="https://webplatform.github.io/docs/guides/html_lists/">html lists</a></li>
-                    </ol>
-                </div>
-            </div>
+
             <div id="page">
                 <div id="page-content">
-                    <aside id="sidebar" class="custom-toc">
-                        <h2 id="sidebar-title">Contents</h2>
-                        <ol>
-                            <li><a href="https://webplatform.github.io/docs/guides/html_lists/#Summary">Summary</a></li>
-                            <li><a href="https://webplatform.github.io/docs/guides/html_lists/#Introduction">Introduction</a>
-                            </li>
-                            <li><a href="https://webplatform.github.io/docs/guides/html_lists/#The-three-list-types">The
-                                    three list types</a>
-                                <ol>
-                                    <li><a href="https://webplatform.github.io/docs/guides/html_lists/#Unordered-lists">Unordered
-                                            lists</a>
-                                        <ol>
-                                            <li><a href="https://webplatform.github.io/docs/guides/html_lists/#Unordered-list-markup">Unordered
-                                                    list markup</a></li>
-                                        </ol>
-                                    </li>
-                                    <li><a href="https://webplatform.github.io/docs/guides/html_lists/#Ordered-lists">Ordered
-                                            lists</a>
-                                        <ol>
-                                            <li><a href="https://webplatform.github.io/docs/guides/html_lists/#Ordered-list-markup">Ordered
-                                                    list markup</a></li>
-                                            <li><a href="https://webplatform.github.io/docs/guides/html_lists/#Beginning-ordered-lists-with-numbers-other-than-1">Beginning
-                                                    ordered lists with numbers other than 1</a></li>
-                                        </ol>
-                                    </li>
-                                    <li><a href="https://webplatform.github.io/docs/guides/html_lists/#Description-lists">Description
-                                            lists</a>
-                                        <ol>
-                                            <li><a href="https://webplatform.github.io/docs/guides/html_lists/#Description-list-markup">Description
-                                                    list markup</a></li>
-                                        </ol>
-                                    </li>
-                                    <li><a href="https://webplatform.github.io/docs/guides/html_lists/#Choosing-among-list-types">Choosing
-                                            among list types</a></li>
-                                    <li><a href="https://webplatform.github.io/docs/guides/html_lists/#HTML-list-advantages">HTML
-                                            list advantages</a></li>
-                                    <li><a href="https://webplatform.github.io/docs/guides/html_lists/#Nesting-lists">Nesting
-                                            lists</a></li>
-                                    <li><a href="https://webplatform.github.io/docs/guides/html_lists/#Conclusion">Conclusion</a>
-                                    </li>
-                                    <li><a href="https://webplatform.github.io/docs/guides/html_lists/#See-also">See
-                                            also</a>
-                                        <ol>
-                                            <li><a href="https://webplatform.github.io/docs/guides/html_lists/#External-resources">External
-                                                    resources</a></li>
-                                            <li><a href="https://webplatform.github.io/docs/guides/html_lists/#Exercise-questions">Exercise
-                                                    questions</a></li>
-                                        </ol>
-                                    </li>
-                                </ol>
-                            </li>
-                        </ol>
-                    </aside>
                     <div id="main-content">
 
                         <h1>HTML lists</h1>
@@ -124,11 +48,14 @@
                         <h2 id="The-three-list-types">The three list types</h2>
                         <p>There are three list types in HTML:</p>
                         <ul>
-                            <li><strong>unordered list</strong> — used to group a set of related items in no particular order
+                            <li>
+                                <strong>unordered list</strong> — used to group a set of related items in no particular order
                             </li>
-                            <li><strong>ordered list</strong> — used to group a set of related items in a specific order
+                            <li>
+                                <strong>ordered list</strong> — used to group a set of related items in a specific order
                             </li>
-                            <li><strong>description list</strong> — used to display name/value pairs such as terms and definitions
+                            <li>
+                                <strong>description list</strong> — used to display name/value pairs such as terms and definitions
                             </li>
                         </ul>
                         <p>Each list type has a specific purpose and meaning in a web page.</p>
@@ -148,7 +75,8 @@
                             <li>butter</li>
                         </ul>
                         <p>You can use CSS to change the bullet to one of several default styles, use your own image, or even display the list without bullets — we’ll look at how to do that in the <a href="https://webplatform.github.io/docs/guides/Styling_lists_and_links">Styling lists
-                                and links</a> article.</p>
+                                and links</a> article.
+                        </p>
 </body>
 
 </html>
